@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site criado por Gabriel Barbosa, estudante de ADS e cursos extras-curriculares de Programação">
+    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tela de Login</title>
+</head>
+<body class="corpo">
+    <main class="conteudo">
+        <section class="conteudo-login">
+            <div class="conteudo-login-imagem">
+                <!-- imagem adicionada em CSS -->
+            </div>
+
+            <div class="conteudo-login-form">
+                <h1 class="conteudo-login-form-titulo">Login</h1>
+                <p class="conteudo-login-form-paragrafo">Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.py" method="post" class="conteudo-login-form-conteudo">
+                    <div class="conteudo-login-form-conteudo-campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu email" autocomplete="email" required>
+                    </div>
+
+                    <div class="conteudo-login-form-conteudo-campo">
+                        <span class="material-icons">lock</span>
+                        <input type="password" minlength="8" maxlength="20" placeholder="sua senha" required>
+                    </div>
+
+                    <div class="conteudo-login-form-conteudo-botao">
+                        <input type="submit" value="Confirmar">
+                        <a href="#">Esqueci a senha <span class="material-icons">email</span></a>
+                    </div>
+                       
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

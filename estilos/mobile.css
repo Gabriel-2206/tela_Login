@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* Versão Mobile */
+
+:root {
+    --cor-1: #024059;
+    --cor-2: #026873;
+    --cor-3: #008d9d;
+    --cor-4: #2edeac;
+    --cor-5: #025940;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.conteudo {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor-2);
+}
+
+.conteudo-login {
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.371);
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+}
+
+.conteudo-login-imagem {
+    height: 200px;
+
+    background-image: url(../imagens/torre-eiffel.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo-login-form {
+    padding: 0px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.conteudo-login-form-titulo {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.conteudo-login-form-paragrafo {
+    font-size: 0.8em;
+}
+
+.conteudo-login-form-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.conteudo-login-form-conteudo-campo {
+    border-radius: 7px;
+    padding: 5px;
+    background-color: var(--cor-1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudo-login-form-conteudo-campo > input {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+
+    font-size: 0.9em;
+}
+
+.conteudo-login-form-conteudo-campo > span {
+    color: white;
+    font-size: 2em;
+    padding-right: 5px;
+}
+
+.conteudo-login-form-conteudo-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo-login-form-conteudo-botao > input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: var(--cor-2);
+    color: white;
+
+    font-size: 1em;
+    text-align: center;
+}
+
+.conteudo-login-form-conteudo-botao > input:hover {
+    background-color: var(--cor-3);
+    cursor: pointer;
+}
+
+.conteudo-login-form-conteudo-botao > a {
+    width: 100%;
+    border: 1px solid var(--cor-2);
+    border-radius: 5px;
+    padding: 10px;
+
+    background-color: white;
+    color: var(--cor-1);
+
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.conteudo-login-form-conteudo-botao > a:hover {
+    background-color: var(--cor-4);
+}
+
+.conteudo-login-form-conteudo-botao > a > span {
+    color: var(--cor-2);
+    font-size: 0.7em;
+}
+
+
+
